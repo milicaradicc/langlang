@@ -1,0 +1,21 @@
+﻿<Window x:Class="LangLang.Views.StudentViews.TeacherReviewModal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:LangLang.Views.StudentViews"
+        mc:Ignorable="d"
+        Title="TeacherReviewModal" Height="250" Width="350"
+        WindowStartupLocation="CenterScreen" Background="#bbe5e4">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <TextBlock Text="Rate the current teacher from 1 to 10:" Margin="0 10 0 10" />
+        <TextBox Grid.Row="1" x:Name="ResponseTextBox" Margin="0 0 0 10" Width="50" TextChanged="ResponseTextBox_TextChanged" />
+        <Button Grid.Row="2" Content="OK" Click="OKButton_Click" Width="50" Background="White"/>
+    </Grid>
+</Window>
